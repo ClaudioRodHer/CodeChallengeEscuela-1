@@ -24,7 +24,7 @@ public class AlumnoController {
 	@PostMapping("/nuevo")
 	public String NuevoAlumno(@Validated Alumno a){
 		service.nuevoAlumno(a);
-		return "/nuevo";
+		return "/nuevo"; 
 		
 	}
 }
