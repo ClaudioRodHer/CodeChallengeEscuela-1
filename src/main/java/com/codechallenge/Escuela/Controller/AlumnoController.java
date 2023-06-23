@@ -15,16 +15,17 @@ public class AlumnoController {
 	@Autowired
 	private IAlumnoService service;
 	
-	@GetMapping("/index")
+	@GetMapping("/listar")
 	public String listar(Model model){
 		service.listar();
 		model.addAttribute("alumnos",service.listar());
 		return "index";
 	}
+	
 	@PostMapping("/nuevo")
 	public String NuevoAlumno(@Validated Alumno a){
 		service.nuevoAlumno(a);
-		return "/nuevo"; 
+		return "nuevo"; 
 		
 	}
 }

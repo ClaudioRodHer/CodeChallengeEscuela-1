@@ -4,11 +4,14 @@ import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Alumno {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ID;
 	@Column
 	private String Nombres;
@@ -41,5 +44,5 @@ public class Alumno {
 	public void setFecha_de_Nacimiento(Date fecha_de_Nacimiento) {
 		Fecha_de_Nacimiento = fecha_de_Nacimiento;
 	}
-//este es un comentario 2
+
 }

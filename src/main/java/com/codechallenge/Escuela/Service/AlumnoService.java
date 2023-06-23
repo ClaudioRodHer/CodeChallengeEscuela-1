@@ -34,7 +34,7 @@ public class AlumnoService implements IAlumnoService{
 
 	@Override
 	public void borrarAlumno(int ID) {
-		// TODO Auto-generated method stub
+		dao.borrarAlumno(ID);
 		
 	}
 

@@ -2,7 +2,6 @@ package com.codechallenge.Escuela.ModelDAO;
 
 import java.util.List;
 
-import org.springframework.data.repository.CrudRepository;
 
 import com.codechallenge.Escuela.Model.Alumno;
 
